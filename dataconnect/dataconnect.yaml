@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "PEC_WEB_CRM"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "PEC_WEB_CRM-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
